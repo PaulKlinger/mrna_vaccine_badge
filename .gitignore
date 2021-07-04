@@ -1,0 +1,10 @@
+*.gcode
+*.o
+*.d
+/moderna_badge_code.X/build/
+/moderna_badge_code.X/dist/
+/moderna_badge_code.X/disassembly/
+/moderna_badge_code.X/.generated_files/
+/moderna_badge_code.X/nbproject/Makefile-*
+/moderna_badge_code.X/nbproject/Package-*
+/moderna_badge_code.X/nbproject/private/
