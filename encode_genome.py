@@ -1,4 +1,5 @@
 from typing import List, Dict
+import sys
 
 
 BASE_MAPPING = {"A": "00", "C": "01", "G": "10", "T": "11"}
@@ -51,7 +52,7 @@ def decode(seq_ints: List[int], num_bases: int) -> str:
 
 
 if __name__ == "__main__":
-    genome = read_sequence("moderna_sequence.fasta")
+    genome = read_sequence(sys.argv[1])
     bytes_sequence, num_bases = encode_sequence(genome)
 
     # check that we get back the orginial sequence by decoding
