@@ -22,6 +22,7 @@
       <itemPath>sequence.c</itemPath>
       <itemPath>pfizer_sequence.c</itemPath>
       <itemPath>button.c</itemPath>
+      <itemPath>config.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

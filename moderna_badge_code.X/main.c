@@ -65,6 +65,19 @@ void show_base(Base b) {
 };
 
 
+const struct sequence *select_sequence(struct config cfg) {
+    if (cfg.sequence == MODERNA) {
+        return &moderna_sequence;
+    } else if (cfg.sequence == PFIZER) {
+        return &pfizer_sequence;
+    }
+    /* this should never happen */
+    VPORTA.OUT = 0;
+    VPORTB.OUT = 0;
+    while(1){}
+}
+
+
 int main(void) {
     
     /* Configure clock prescaler for 1MHz  */
@@ -113,10 +126,12 @@ int main(void) {
     init_button();
     sei();
     
+    struct config cfg = load_config();
+    
     go_to_sleep();
     
-    const struct sequence *current_sequence = &moderna_sequence;
     while (1) {
+        const struct sequence *current_sequence = select_sequence(cfg);
         for (uint32_t i=0; i< current_sequence->n_bases; i++) {
             show_base(read_base(current_sequence, i));
             _delay_ms(LIGHT_DURATION_MS);
@@ -133,19 +148,20 @@ int main(void) {
             while (1) {
                 if (button_released > LONG_PRESS_LENGTH) {
                     button_released = 0;
+                    save_config(cfg); // store config in EEPROM
                     break; // start displaying sequence
                 } else if (button_released) {
                     button_released = 0;
-                    if (current_sequence == &moderna_sequence) {
-                        current_sequence = &pfizer_sequence;
-                    } else if (current_sequence == &pfizer_sequence) {
-                        current_sequence = &moderna_sequence;
+                    if (cfg.sequence == MODERNA) {
+                        cfg.sequence = PFIZER;
+                    } else if (cfg.sequence == PFIZER) {
+                        cfg.sequence = MODERNA;
                     }
                 }
-                if (current_sequence == &moderna_sequence) {
+                if (cfg.sequence == MODERNA) {
                     VPORTB.OUT = (PIN6_bm | PIN7_bm);
                     VPORTA.OUT = (uint8_t) ~(PIN7_bm | PIN6_bm);
-                } else if (current_sequence == &pfizer_sequence) {
+                } else if (cfg.sequence == PFIZER) {
                     VPORTA.OUT = (PIN6_bm | PIN7_bm);
                     VPORTB.OUT = (uint8_t) ~(PIN7_bm | PIN6_bm);
                 }
