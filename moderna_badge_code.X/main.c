@@ -1,6 +1,6 @@
 #include "config.h"
 
-
+#include <stdbool.h>
 #include <util/delay.h>
 #include <avr/sleep.h>
 #include <avr/io.h>
@@ -26,8 +26,48 @@ volatile uint8_t button_pressed = 0;
 
 ISR(PORTB_PORT_vect) {
     /* This is only used to wake the MCU, so we do nothing here. */
-    button_pressed = 1;
     VPORTB.INTFLAGS |= PORT_INT2_bm;
+}
+
+
+volatile bool last_button_state = false;
+volatile bool debounced_button_state = false;
+#define DEBOUNCE_THRESHOLD 10 // = 80ms
+volatile uint8_t debounce_counter = 0;
+volatile uint16_t held_time = 0;
+volatile uint16_t button_released = 0;
+
+ISR(RTC_PIT_vect) {
+    bool last_debounced_button_state = debounced_button_state;
+    /* debouncing */
+    bool button_state = ~VPORTB.IN & PIN2_bm;
+    if (button_state == last_button_state) {
+        if (debounce_counter < DEBOUNCE_THRESHOLD) {
+            debounce_counter++;
+        } else {
+            debounced_button_state = button_state;
+        }
+    } else {
+        debounce_counter = 0;
+    }
+    last_button_state = button_state;
+    
+
+    /* release "flag" */
+    if (last_debounced_button_state && !debounced_button_state) {
+        button_released = held_time;
+    }
+    
+    /* hold time counting */
+    if (debounced_button_state) {
+        held_time++;
+    } else {
+        held_time = 0;
+    }
+    
+    last_debounced_button_state = debounced_button_state;
+    
+    RTC.PITINTFLAGS |= RTC_PI_bm; // clear interrupt flag
 }
 
 void switch_off_leds() {
@@ -39,14 +79,15 @@ void go_to_sleep(){
     while (~PORTB.IN & PIN2_bm) {}
     _delay_ms(50);
     switch_off_leds();
+    RTC.PITCTRLA &= ~RTC_PITEN_bm;
     _delay_ms(100);
     set_sleep_mode(SLEEP_MODE_PWR_DOWN);
     sleep_enable();
     sleep_cpu();
-    
     while (~PORTB.IN & PIN2_bm) {}
     _delay_ms(50);
-    button_pressed = 0;
+    button_released = 0;
+    RTC.PITCTRLA |= RTC_PITEN_bm;
 }
 
 
@@ -68,6 +109,15 @@ void show_base(Base b) {
     }
 };
 
+
+void init_rtc_pit() {
+    while (RTC.STATUS > 0) {}
+    RTC.CLKSEL = RTC_CLKSEL_INT32K_gc;
+    while (RTC.PITSTATUS > 0) {}
+    RTC.PITCTRLA = RTC_PERIOD_CYC256_gc | RTC_PITEN_bm;
+    RTC.PITINTCTRL = RTC_PITEN_bm;
+    RTC.CTRLA = RTC_PRESCALER_DIV1_gc | RTC_RTCEN_bm;
+}
 
 
 int main(void) {
@@ -114,6 +164,10 @@ int main(void) {
     /* Enable interrupt on power button
      * (this is only for wakeup)*/
     PORTB.PIN2CTRL = (PORTB.PIN2CTRL & ~PORT_ISC_gm) | PORT_ISC_BOTHEDGES_gc;
+    
+    
+    init_rtc_pit();
+    
     sei();
     
     while (1) {
@@ -123,8 +177,19 @@ int main(void) {
             show_base(read_base(&moderna_sequence, i));
             _delay_ms(LIGHT_DURATION_MS);
             switch_off_leds();
-            if (button_pressed) {
-                button_pressed = 0;
+            if (button_released > 125) {
+                button_released = 0;
+                // long press, switch
+                for (uint8_t j=0; j<10; j++) {
+                    VPORTA.OUT = (PIN6_bm | PIN7_bm);
+                    VPORTB.OUT = (uint8_t) ~(PIN7_bm | PIN6_bm);
+                    _delay_ms(300);
+                    VPORTB.OUT = (PIN6_bm | PIN7_bm);
+                    VPORTA.OUT = (uint8_t) ~(PIN7_bm | PIN6_bm);
+                    _delay_ms(300);
+                }
+            } else if (button_released > 0) {
+                button_released = 0;
                 break;
             }
             _delay_ms(INTERVAL_DURATION_MS);
