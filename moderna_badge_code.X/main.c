@@ -9,6 +9,7 @@
 
 #include "sequence.h"
 #include "moderna_sequence.h"
+#include "pfizer_sequence.h"
 
 
 FUSES = 
@@ -29,10 +30,11 @@ ISR(PORTB_PORT_vect) {
     VPORTB.INTFLAGS |= PORT_INT2_bm;
 }
 
+#define DEBOUNCE_THRESHOLD 10 // = 80ms
+#define LONG_PRESS_LENGTH 125 // = 1s
 
 volatile bool last_button_state = false;
 volatile bool debounced_button_state = false;
-#define DEBOUNCE_THRESHOLD 10 // = 80ms
 volatile uint8_t debounce_counter = 0;
 volatile uint16_t held_time = 0;
 volatile uint16_t button_released = 0;
@@ -165,34 +167,49 @@ int main(void) {
      * (this is only for wakeup)*/
     PORTB.PIN2CTRL = (PORTB.PIN2CTRL & ~PORT_ISC_gm) | PORT_ISC_BOTHEDGES_gc;
     
-    
     init_rtc_pit();
-    
     sei();
     
-    while (1) {
-        go_to_sleep();
+    go_to_sleep();
     
-        for (uint32_t i=0; i< moderna_sequence.n_bases; i++) {
-            show_base(read_base(&moderna_sequence, i));
+    const struct sequence *current_sequence = &moderna_sequence;
+    while (1) {
+        for (uint32_t i=0; i< current_sequence->n_bases; i++) {
+            show_base(read_base(current_sequence, i));
             _delay_ms(LIGHT_DURATION_MS);
             switch_off_leds();
-            if (button_released > 125) {
-                button_released = 0;
-                // long press, switch
-                for (uint8_t j=0; j<10; j++) {
-                    VPORTA.OUT = (PIN6_bm | PIN7_bm);
-                    VPORTB.OUT = (uint8_t) ~(PIN7_bm | PIN6_bm);
-                    _delay_ms(300);
-                    VPORTB.OUT = (PIN6_bm | PIN7_bm);
-                    VPORTA.OUT = (uint8_t) ~(PIN7_bm | PIN6_bm);
-                    _delay_ms(300);
-                }
-            } else if (button_released > 0) {
-                button_released = 0;
+            if (button_released) {
                 break;
             }
             _delay_ms(INTERVAL_DURATION_MS);
+        }
+        
+        if (button_released > LONG_PRESS_LENGTH) {
+            button_released = 0;
+            // long press, switch between sequences
+            while (1) {
+                if (button_released > LONG_PRESS_LENGTH) {
+                    button_released = 0;
+                    break; // start displaying sequence
+                } else if (button_released) {
+                    button_released = 0;
+                    if (current_sequence == &moderna_sequence) {
+                        current_sequence = &pfizer_sequence;
+                    } else if (current_sequence == &pfizer_sequence) {
+                        current_sequence = &moderna_sequence;
+                    }
+                }
+                if (current_sequence == &moderna_sequence) {
+                    VPORTB.OUT = (PIN6_bm | PIN7_bm);
+                    VPORTA.OUT = (uint8_t) ~(PIN7_bm | PIN6_bm);
+                } else if (current_sequence == &pfizer_sequence) {
+                    VPORTA.OUT = (PIN6_bm | PIN7_bm);
+                    VPORTB.OUT = (uint8_t) ~(PIN7_bm | PIN6_bm);
+                }
+            }
+        } else {
+            button_released = 0;
+            go_to_sleep();
         }
     }
 }

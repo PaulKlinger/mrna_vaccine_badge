@@ -7,6 +7,7 @@
       <itemPath>config.h</itemPath>
       <itemPath>moderna_sequence.h</itemPath>
       <itemPath>sequence.h</itemPath>
+      <itemPath>pfizer_sequence.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -18,6 +19,7 @@
       <itemPath>main.c</itemPath>
       <itemPath>moderna_sequence.c</itemPath>
       <itemPath>sequence.c</itemPath>
+      <itemPath>pfizer_sequence.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

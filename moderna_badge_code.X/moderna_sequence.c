@@ -3,7 +3,7 @@
 
 /* Generated from .fasta using encode_genome.py */
 /* 2 bits per base, 00:A, 01:C, 10:G, 11:T */
-const uint8_t sequence_data[] = {
+static const uint8_t sequence_data[] = {
 168, 12, 34, 32, 8, 34, 194, 8, 12, 194, 21, 105, 150, 81, 78, 246,
 239, 94, 185, 231, 149, 122, 226, 73, 75, 155, 129, 120, 81, 90, 21, 39,
 148, 82, 92, 69, 4, 159, 69, 106, 155, 113, 197, 88, 66, 187, 214, 137,
