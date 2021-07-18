@@ -6,7 +6,7 @@
 #include <avr/io.h>
 #include <avr/interrupt.h>
 
-
+#include "button.h"
 #include "sequence.h"
 #include "moderna_sequence.h"
 #include "pfizer_sequence.h"
@@ -23,55 +23,6 @@ FUSES =
 	.WDTCFG = PERIOD_OFF_gc | WINDOW_OFF_gc,
 };
 
-volatile uint8_t button_pressed = 0;
-
-ISR(PORTB_PORT_vect) {
-    /* This is only used to wake the MCU, so we do nothing here. */
-    VPORTB.INTFLAGS |= PORT_INT2_bm;
-}
-
-#define DEBOUNCE_THRESHOLD 10 // = 80ms
-#define LONG_PRESS_LENGTH 125 // = 1s
-
-volatile bool last_button_state = false;
-volatile bool debounced_button_state = false;
-volatile uint8_t debounce_counter = 0;
-volatile uint16_t held_time = 0;
-volatile uint16_t button_released = 0;
-
-ISR(RTC_PIT_vect) {
-    bool last_debounced_button_state = debounced_button_state;
-    /* debouncing */
-    bool button_state = ~VPORTB.IN & PIN2_bm;
-    if (button_state == last_button_state) {
-        if (debounce_counter < DEBOUNCE_THRESHOLD) {
-            debounce_counter++;
-        } else {
-            debounced_button_state = button_state;
-        }
-    } else {
-        debounce_counter = 0;
-    }
-    last_button_state = button_state;
-    
-
-    /* release "flag" */
-    if (last_debounced_button_state && !debounced_button_state) {
-        button_released = held_time;
-    }
-    
-    /* hold time counting */
-    if (debounced_button_state) {
-        held_time++;
-    } else {
-        held_time = 0;
-    }
-    
-    last_debounced_button_state = debounced_button_state;
-    
-    RTC.PITINTFLAGS |= RTC_PI_bm; // clear interrupt flag
-}
-
 void switch_off_leds() {
     VPORTA.OUT = (PIN6_bm | PIN7_bm);
     VPORTB.OUT = (PIN6_bm | PIN7_bm);
@@ -81,6 +32,7 @@ void go_to_sleep(){
     while (~PORTB.IN & PIN2_bm) {}
     _delay_ms(50);
     switch_off_leds();
+    /* disable periodic interrupt, so it doesn't wake up MCU */
     RTC.PITCTRLA &= ~RTC_PITEN_bm;
     _delay_ms(100);
     set_sleep_mode(SLEEP_MODE_PWR_DOWN);
@@ -89,6 +41,7 @@ void go_to_sleep(){
     while (~PORTB.IN & PIN2_bm) {}
     _delay_ms(50);
     button_released = 0;
+    /* enable periodic interrupt again */
     RTC.PITCTRLA |= RTC_PITEN_bm;
 }
 
@@ -110,16 +63,6 @@ void show_base(Base b) {
             break;
     }
 };
-
-
-void init_rtc_pit() {
-    while (RTC.STATUS > 0) {}
-    RTC.CLKSEL = RTC_CLKSEL_INT32K_gc;
-    while (RTC.PITSTATUS > 0) {}
-    RTC.PITCTRLA = RTC_PERIOD_CYC256_gc | RTC_PITEN_bm;
-    RTC.PITINTCTRL = RTC_PITEN_bm;
-    RTC.CTRLA = RTC_PRESCALER_DIV1_gc | RTC_RTCEN_bm;
-}
 
 
 int main(void) {
@@ -167,7 +110,7 @@ int main(void) {
      * (this is only for wakeup)*/
     PORTB.PIN2CTRL = (PORTB.PIN2CTRL & ~PORT_ISC_gm) | PORT_ISC_BOTHEDGES_gc;
     
-    init_rtc_pit();
+    init_button();
     sei();
     
     go_to_sleep();
