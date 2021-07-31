@@ -24,8 +24,8 @@ FUSES =
 };
 
 void switch_off_leds() {
-    VPORTA.OUT = (PIN6_bm | PIN7_bm);
-    VPORTB.OUT = (PIN6_bm | PIN7_bm);
+    VPORTA.OUT = 255;
+    VPORTB.OUT = 255;
 }
 
 void go_to_sleep(){
@@ -47,6 +47,7 @@ void go_to_sleep(){
 
 
 void show_base(Base b) {
+    // for v1 (same color leds connected)
     switch (b) {
         case A: // green
             // cast to prevent warning caused by integer promotion to signed...
@@ -60,6 +61,42 @@ void show_base(Base b) {
             break;
         case T: // red
             VPORTA.OUT = (uint8_t) ~PIN7_bm;
+            break;
+    }
+};
+
+void show_bases(Base b1, Base b2) {
+    VPORTA.OUT = 255;
+    VPORTB.OUT = 255;
+    switch (b1) {
+        case A: // green
+            // cast to prevent warning caused by integer promotion to signed...
+            VPORTB.OUT &= ~PIN6_bm;
+            break;
+        case C: // blue
+            VPORTB.OUT &= ~PIN4_bm;
+            break;
+        case G: // yellow
+            VPORTA.OUT &= ~PIN4_bm;
+            break;
+        case T: // red
+            VPORTA.OUT &= ~PIN6_bm;
+            break;
+    }
+    
+    switch (b2) {
+        case A: // green
+            // cast to prevent warning caused by integer promotion to signed...
+            VPORTB.OUT &= ~PIN7_bm;
+            break;
+        case C: // blue
+            VPORTB.OUT &= ~PIN5_bm;
+            break;
+        case G: // yellow
+            VPORTA.OUT &= ~PIN5_bm;
+            break;
+        case T: // red
+            VPORTA.OUT &= ~PIN7_bm;
             break;
     }
 };
@@ -115,8 +152,8 @@ int main(void) {
     PORTC.PIN5CTRL |= PORT_PULLUPEN_bm;
     
     
-    VPORTB.DIR = (PIN6_bm | PIN7_bm);
-    VPORTA.DIR = (PIN6_bm | PIN7_bm);
+    VPORTB.DIR = (PIN4_bm | PIN5_bm | PIN6_bm | PIN7_bm);
+    VPORTA.DIR = (PIN4_bm | PIN5_bm | PIN6_bm | PIN7_bm);
     
     
     /* Enable interrupt on power button
@@ -132,8 +169,11 @@ int main(void) {
     
     while (1) {
         const struct sequence *current_sequence = select_sequence(cfg);
-        for (uint32_t i=0; i< current_sequence->n_bases; i++) {
-            show_base(read_base(current_sequence, i));
+        for (uint32_t i=0; i< current_sequence->n_bases - 1; i++) {
+            show_bases(
+                    read_base(current_sequence, i),
+                    read_base(current_sequence, i + 1)
+                    );
             _delay_ms(LIGHT_DURATION_MS);
             switch_off_leds();
             if (button_released) {
@@ -159,11 +199,11 @@ int main(void) {
                     }
                 }
                 if (cfg.sequence == MODERNA) {
-                    VPORTB.OUT = (PIN6_bm | PIN7_bm);
-                    VPORTA.OUT = (uint8_t) ~(PIN7_bm | PIN6_bm);
+                    VPORTB.OUT = 255;
+                    VPORTA.OUT = (uint8_t) ~(PIN4_bm | PIN5_bm | PIN6_bm | PIN7_bm);
                 } else if (cfg.sequence == PFIZER) {
-                    VPORTA.OUT = (PIN6_bm | PIN7_bm);
-                    VPORTB.OUT = (uint8_t) ~(PIN7_bm | PIN6_bm);
+                    VPORTA.OUT = 255;
+                    VPORTB.OUT = (uint8_t) ~(PIN4_bm | PIN5_bm | PIN6_bm | PIN7_bm);
                 }
             }
         } else {
