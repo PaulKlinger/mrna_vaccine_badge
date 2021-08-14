@@ -3,7 +3,7 @@
     <type>com.microchip.mplab.nbide.embedded.makeproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
-            <name>moderna_badge_code</name>
+            <name>mrna_vaccine_badge_code</name>
             <creation-uuid>0dc84441-d152-47fd-9eb0-92da42ce670c</creation-uuid>
             <make-project-type>0</make-project-type>
             <c-extensions>c</c-extensions>
