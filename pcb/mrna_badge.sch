@@ -8,181 +8,181 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" blackcolor="0xc8ff4164" whitecolor="0xccc90d0c" coloredcolor="0xccc90d0c" blackhighlight="0xccff0000" whitehighlight="0xb4ff0000" coloredhighlight="0xb4ff0000" fill="1" visible="no" active="no"/>
-<layer number="2" name="Route2" blackcolor="0xc80696d7" whitecolor="0xcc0696d7" coloredcolor="0xcc0696d7" blackhighlight="0xb40000ff" whitehighlight="0xcc8252c2" coloredhighlight="0xcc8252c2" fill="3" visible="no" active="no"/>
-<layer number="3" name="Route3" blackcolor="0xc8ff4164" whitecolor="0xccc90d0c" coloredcolor="0xccc90d0c" blackhighlight="0xccff0000" whitehighlight="0xb4ff0000" coloredhighlight="0xb4ff0000" fill="3" visible="no" active="no"/>
-<layer number="4" name="Route4" blackcolor="0xc80696d7" whitecolor="0xcc0696d7" coloredcolor="0xcc0696d7" blackhighlight="0xb40000ff" whitehighlight="0xcc8252c2" coloredhighlight="0xcc8252c2" fill="4" visible="no" active="no"/>
-<layer number="5" name="Route5" blackcolor="0xc8ff4164" whitecolor="0xccc90d0c" coloredcolor="0xccc90d0c" blackhighlight="0xccff0000" whitehighlight="0xb4ff0000" coloredhighlight="0xb4ff0000" fill="4" visible="no" active="no"/>
-<layer number="6" name="Route6" blackcolor="0xc80696d7" whitecolor="0xcc0696d7" coloredcolor="0xcc0696d7" blackhighlight="0xb40000ff" whitehighlight="0xcc8252c2" coloredhighlight="0xcc8252c2" fill="8" visible="no" active="no"/>
-<layer number="7" name="Route7" blackcolor="0xc8ff4164" whitecolor="0xccc90d0c" coloredcolor="0xccc90d0c" blackhighlight="0xccff0000" whitehighlight="0xb4ff0000" coloredhighlight="0xb4ff0000" fill="8" visible="no" active="no"/>
-<layer number="8" name="Route8" blackcolor="0xc80696d7" whitecolor="0xcc0696d7" coloredcolor="0xcc0696d7" blackhighlight="0xb40000ff" whitehighlight="0xcc8252c2" coloredhighlight="0xcc8252c2" fill="2" visible="no" active="no"/>
-<layer number="9" name="Route9" blackcolor="0xc8ff4164" whitecolor="0xccc90d0c" coloredcolor="0xccc90d0c" blackhighlight="0xccff0000" whitehighlight="0xb4ff0000" coloredhighlight="0xb4ff0000" fill="2" visible="no" active="no"/>
-<layer number="10" name="Route10" blackcolor="0xc80696d7" whitecolor="0xcc0696d7" coloredcolor="0xcc0696d7" blackhighlight="0xb40000ff" whitehighlight="0xcc8252c2" coloredhighlight="0xcc8252c2" fill="7" visible="no" active="no"/>
-<layer number="11" name="Route11" blackcolor="0xc8ff4164" whitecolor="0xccc90d0c" coloredcolor="0xccc90d0c" blackhighlight="0xccff0000" whitehighlight="0xb4ff0000" coloredhighlight="0xb4ff0000" fill="7" visible="no" active="no"/>
-<layer number="12" name="Route12" blackcolor="0xc80696d7" whitecolor="0xcc0696d7" coloredcolor="0xcc0696d7" blackhighlight="0xb40000ff" whitehighlight="0xcc8252c2" coloredhighlight="0xcc8252c2" fill="5" visible="no" active="no"/>
-<layer number="13" name="Route13" blackcolor="0xc8ff4164" whitecolor="0xccc90d0c" coloredcolor="0xccc90d0c" blackhighlight="0xccff0000" whitehighlight="0xb4ff0000" coloredhighlight="0xb4ff0000" fill="5" visible="no" active="no"/>
-<layer number="14" name="Route14" blackcolor="0xc80696d7" whitecolor="0xcc0696d7" coloredcolor="0xcc0696d7" blackhighlight="0xb40000ff" whitehighlight="0xcc8252c2" coloredhighlight="0xcc8252c2" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" blackcolor="0xc8ff4164" whitecolor="0xccc90d0c" coloredcolor="0xccc90d0c" blackhighlight="0xccff0000" whitehighlight="0xb4ff0000" coloredhighlight="0xb4ff0000" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" blackcolor="0xc80696d7" whitecolor="0xcc0696d7" coloredcolor="0xcc0696d7" blackhighlight="0xb40000ff" whitehighlight="0xcc8252c2" coloredhighlight="0xcc8252c2" fill="1" visible="no" active="no"/>
-<layer number="17" name="Pads" blackcolor="0xb462d987" whitecolor="0xb462d987" coloredcolor="0xcc0dab76" blackhighlight="0xb400ff00" whitehighlight="0xb400ff00" coloredhighlight="0xb400ff00" fill="1" visible="no" active="no"/>
-<layer number="18" name="Vias" blackcolor="0xb462d987" whitecolor="0xb462d987" coloredcolor="0xcc0dab76" blackhighlight="0xb400ff00" whitehighlight="0xb400ff00" coloredhighlight="0xb400ff00" fill="1" visible="no" active="no"/>
-<layer number="19" name="Unrouted" blackcolor="0xccd9d9d9" whitecolor="0xbbc8c832" coloredcolor="0xbbc8c832" blackhighlight="0xb462d987" whitehighlight="0xb462d987" coloredhighlight="0xccffcd07" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" blackcolor="0xc8ffffff" whitecolor="0xccafd134" coloredcolor="0xccafd134" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="23" name="tOrigins" blackcolor="0xc8ffffff" whitecolor="0xccafd134" coloredcolor="0xccafd134" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="24" name="bOrigins" blackcolor="0xc8ffffff" whitecolor="0xccafd134" coloredcolor="0xccafd134" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="25" name="tNames" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="26" name="bNames" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="27" name="tValues" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="28" name="bValues" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="29" name="tStop" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="3" visible="no" active="no"/>
-<layer number="30" name="bStop" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="6" visible="no" active="no"/>
-<layer number="31" name="tCream" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="4" visible="no" active="no"/>
-<layer number="32" name="bCream" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="5" visible="no" active="no"/>
-<layer number="33" name="tFinish" blackcolor="0xccd9d9d9" whitecolor="0xbbc8c832" coloredcolor="0xbbc8c832" blackhighlight="0xb462d987" whitehighlight="0xb462d987" coloredhighlight="0xccffcd07" fill="3" visible="no" active="no"/>
-<layer number="34" name="bFinish" blackcolor="0xccd9d9d9" whitecolor="0xbbc8c832" coloredcolor="0xbbc8c832" blackhighlight="0xb462d987" whitehighlight="0xb462d987" coloredhighlight="0xccffcd07" fill="6" visible="no" active="no"/>
-<layer number="35" name="tGlue" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="4" visible="no" active="no"/>
-<layer number="36" name="bGlue" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="38" name="bTest" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="39" name="tKeepout" blackcolor="0xc8ff4164" whitecolor="0xccc90d0c" coloredcolor="0xccc90d0c" blackhighlight="0xccff0000" whitehighlight="0xb4ff0000" coloredhighlight="0xb4ff0000" fill="11" visible="no" active="no"/>
-<layer number="40" name="bKeepout" blackcolor="0xc80696d7" whitecolor="0xcc0696d7" coloredcolor="0xcc0696d7" blackhighlight="0xb40000ff" whitehighlight="0xcc8252c2" coloredhighlight="0xcc8252c2" fill="11" visible="no" active="no"/>
-<layer number="41" name="tRestrict" blackcolor="0xc8ff4164" whitecolor="0xccc90d0c" coloredcolor="0xccc90d0c" blackhighlight="0xccff0000" whitehighlight="0xb4ff0000" coloredhighlight="0xb4ff0000" fill="10" visible="no" active="no"/>
-<layer number="42" name="bRestrict" blackcolor="0xc80696d7" whitecolor="0xcc0696d7" coloredcolor="0xcc0696d7" blackhighlight="0xb40000ff" whitehighlight="0xcc8252c2" coloredhighlight="0xcc8252c2" fill="10" visible="no" active="no"/>
-<layer number="43" name="vRestrict" blackcolor="0xb462d987" whitecolor="0xb462d987" coloredcolor="0xcc0dab76" blackhighlight="0xb400ff00" whitehighlight="0xb400ff00" coloredhighlight="0xb400ff00" fill="10" visible="no" active="no"/>
-<layer number="44" name="Drills" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="45" name="Holes" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" blackcolor="0xcc32c8c8" whitecolor="0xb432c8c8" coloredcolor="0xb432c8c8" blackhighlight="0xb400ffff" whitehighlight="0xb400ffff" coloredhighlight="0xb400ffff" fill="1" visible="no" active="no"/>
-<layer number="47" name="Measures" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="48" name="Document" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="50" name="dxf" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="53" name="tGND_GNDA" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="9" visible="no" active="no"/>
-<layer number="54" name="bGND_GNDA" blackcolor="0xc80696d7" whitecolor="0xcc0696d7" coloredcolor="0xcc0696d7" blackhighlight="0xb40000ff" whitehighlight="0xcc8252c2" coloredhighlight="0xcc8252c2" fill="9" visible="no" active="no"/>
-<layer number="56" name="wert" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="57" name="tCAD" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="59" name="tCarbon" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="60" name="bCarbon" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="88" name="SimResults" blackcolor="0xb40000ff" whitecolor="0xcc8252c2" coloredcolor="0xcc8252c2" blackhighlight="0xb40000ff" whitehighlight="0xcc8252c2" coloredhighlight="0xcc8252c2" fill="1" visible="yes" active="yes"/>
-<layer number="89" name="SimProbes" blackcolor="0xb40000ff" whitecolor="0xcc8252c2" coloredcolor="0xcc8252c2" blackhighlight="0xb40000ff" whitehighlight="0xcc8252c2" coloredhighlight="0xcc8252c2" fill="1" visible="yes" active="yes"/>
-<layer number="90" name="Modules" blackcolor="0xccffba08" whitecolor="0xccffba08" coloredcolor="0xccffba08" blackhighlight="0xccff00ff" whitehighlight="0xb4ff00ff" coloredhighlight="0xb4ff00ff" fill="1" visible="yes" active="yes"/>
-<layer number="91" name="Nets" blackcolor="0xb462d987" whitecolor="0xb462d987" coloredcolor="0xcc0dab76" blackhighlight="0xb400ff00" whitehighlight="0xb400ff00" coloredhighlight="0xb400ff00" fill="1" visible="yes" active="yes"/>
-<layer number="92" name="Busses" blackcolor="0xc80696d7" whitecolor="0xcc0696d7" coloredcolor="0xcc0696d7" blackhighlight="0xb40000ff" whitehighlight="0xcc8252c2" coloredhighlight="0xcc8252c2" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" blackcolor="0xb462d987" whitecolor="0xb462d987" coloredcolor="0xcc0dab76" blackhighlight="0xb400ff00" whitehighlight="0xb400ff00" coloredhighlight="0xb400ff00" fill="1" visible="no" active="yes"/>
-<layer number="94" name="Symbols" blackcolor="0xc8ff4164" whitecolor="0xccc90d0c" coloredcolor="0xccc90d0c" blackhighlight="0xccff0000" whitehighlight="0xb4ff0000" coloredhighlight="0xb4ff0000" fill="1" visible="yes" active="yes"/>
-<layer number="95" name="Names" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes"/>
-<layer number="96" name="Values" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes"/>
-<layer number="97" name="Info" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes"/>
-<layer number="98" name="Guide" blackcolor="0xccd9d9d9" whitecolor="0xbbc8c832" coloredcolor="0xbbc8c832" blackhighlight="0xb462d987" whitehighlight="0xb462d987" coloredhighlight="0xccffcd07" fill="1" visible="yes" active="yes"/>
-<layer number="99" name="SpiceOrder" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes"/>
-<layer number="100" name="Muster" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="101" name="Patch_Top" blackcolor="0xccff0000" whitecolor="0xb4ff0000" coloredcolor="0xb4ff0000" blackhighlight="0xccff0000" whitehighlight="0xb4ff0000" coloredhighlight="0xb4ff0000" fill="4" visible="no" active="no"/>
-<layer number="102" name="Vscore" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="103" name="tMap" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="104" name="Name" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="105" name="tPlate" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="106" name="bPlate" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="107" name="Crop" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="108" name="fp8" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="109" name="fp9" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="110" name="110" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="111" name="111" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="112" name="tSilk" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="113" name="IDFDebug" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="yes"/>
-<layer number="114" name="FRNTMAAT1" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes"/>
-<layer number="115" name="FRNTMAAT2" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes"/>
-<layer number="116" name="Patch_BOT" blackcolor="0xb40000ff" whitecolor="0xcc8252c2" coloredcolor="0xcc8252c2" blackhighlight="0xb40000ff" whitehighlight="0xcc8252c2" coloredhighlight="0xcc8252c2" fill="4" visible="no" active="no"/>
-<layer number="117" name="BACKMAAT1" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes"/>
-<layer number="118" name="Rect_Pads" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="119" name="KAP_TEKEN" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes"/>
-<layer number="120" name="KAP_MAAT1" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes"/>
-<layer number="121" name="_tsilk" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="122" name="_bsilk" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="123" name="tTestmark" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="124" name="bTestmark" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="125" name="_tNames" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="126" name="_bNames" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="127" name="_tValues" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="128" name="_bValues" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="129" name="top_silk" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes"/>
-<layer number="130" name="SMDSTROOK" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes"/>
-<layer number="131" name="tAdjust" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="132" name="bAdjust" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="133" name="bottom_silk" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes"/>
-<layer number="134" name="silk_top" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="135" name="silk_bottom" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="136" name="silktop" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes"/>
-<layer number="137" name="silkbottom" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes"/>
-<layer number="138" name="mbTest" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes"/>
-<layer number="139" name="mtKeepout" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes"/>
-<layer number="140" name="mbKeepout" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes"/>
-<layer number="141" name="mtRestrict" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes"/>
-<layer number="142" name="mbRestrict" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes"/>
-<layer number="143" name="mvRestrict" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes"/>
-<layer number="144" name="DrillLegend" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="145" name="DrillLegend_01-16" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes"/>
-<layer number="146" name="DrillLegend_01-20" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes"/>
-<layer number="147" name="mMeasures" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes"/>
-<layer number="148" name="mDocument" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes"/>
-<layer number="149" name="mReference" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes"/>
-<layer number="150" name="Notes" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="yes"/>
-<layer number="151" name="HeatSink" blackcolor="0xb462d987" whitecolor="0xb462d987" coloredcolor="0xccffcd07" blackhighlight="0xb462d987" whitehighlight="0xb462d987" coloredhighlight="0xccffcd07" fill="1" visible="no" active="no"/>
-<layer number="152" name="_bDocu" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="153" name="FabDoc1" blackcolor="0xccd9d9d9" whitecolor="0xbbc8c832" coloredcolor="0xbbc8c832" blackhighlight="0xb462d987" whitehighlight="0xb462d987" coloredhighlight="0xccffcd07" fill="1" visible="no" active="no"/>
-<layer number="154" name="FabDoc2" blackcolor="0xb462d987" whitecolor="0xb462d987" coloredcolor="0xcc0dab76" blackhighlight="0xb400ff00" whitehighlight="0xb400ff00" coloredhighlight="0xb400ff00" fill="1" visible="no" active="no"/>
-<layer number="155" name="FabDoc3" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="15" visible="no" active="no"/>
-<layer number="166" name="AntennaArea" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes"/>
-<layer number="168" name="4mmHeightArea" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes"/>
-<layer number="191" name="mNets" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes"/>
-<layer number="192" name="mBusses" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes"/>
-<layer number="193" name="mPins" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes"/>
-<layer number="194" name="mSymbols" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes"/>
-<layer number="195" name="mNames" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes"/>
-<layer number="196" name="mValues" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes"/>
-<layer number="199" name="Contour" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="200" name="200bmp" blackcolor="0xc80696d7" whitecolor="0xcc0696d7" coloredcolor="0xcc0696d7" blackhighlight="0xb40000ff" whitehighlight="0xcc8252c2" coloredhighlight="0xcc8252c2" fill="10" visible="no" active="no"/>
-<layer number="201" name="201bmp" blackcolor="0xb462d987" whitecolor="0xb462d987" coloredcolor="0xcc0dab76" blackhighlight="0xb400ff00" whitehighlight="0xb400ff00" coloredhighlight="0xb400ff00" fill="1" visible="no" active="no"/>
-<layer number="202" name="202bmp" blackcolor="0xcc32c8c8" whitecolor="0xb432c8c8" coloredcolor="0xb432c8c8" blackhighlight="0xb400ffff" whitehighlight="0xb400ffff" coloredhighlight="0xb400ffff" fill="1" visible="no" active="no"/>
-<layer number="203" name="203bmp" blackcolor="0xc8ff4164" whitecolor="0xccc90d0c" coloredcolor="0xccc90d0c" blackhighlight="0xccff0000" whitehighlight="0xb4ff0000" coloredhighlight="0xb4ff0000" fill="10" visible="no" active="no"/>
-<layer number="204" name="204bmp" blackcolor="0xccffba08" whitecolor="0xccffba08" coloredcolor="0xccffba08" blackhighlight="0xccff00ff" whitehighlight="0xb4ff00ff" coloredhighlight="0xb4ff00ff" fill="10" visible="no" active="no"/>
-<layer number="205" name="205bmp" blackcolor="0xccd9d9d9" whitecolor="0xbbc8c832" coloredcolor="0xbbc8c832" blackhighlight="0xb462d987" whitehighlight="0xb462d987" coloredhighlight="0xccffcd07" fill="10" visible="no" active="no"/>
-<layer number="206" name="206bmp" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="10" visible="no" active="no"/>
-<layer number="207" name="207bmp" blackcolor="0xc8ffffff" whitecolor="0xccafd134" coloredcolor="0xccafd134" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="10" visible="no" active="no"/>
-<layer number="208" name="208bmp" blackcolor="0xb40000ff" whitecolor="0xcc8252c2" coloredcolor="0xcc8252c2" blackhighlight="0xb40000ff" whitehighlight="0xcc8252c2" coloredhighlight="0xcc8252c2" fill="10" visible="no" active="no"/>
-<layer number="209" name="209bmp" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="210" name="210bmp" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="211" name="211bmp" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="212" name="212bmp" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="213" name="213bmp" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="214" name="214bmp" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="215" name="215bmp" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="216" name="216bmp" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="217" name="217bmp" blackcolor="0xc89fc966" whitecolor="0xc89fc966" coloredcolor="0xccffdda1" blackhighlight="0xc8ff8cc6" whitehighlight="0xc8ff8cc6" coloredhighlight="0xcc6f45b4" fill="1" visible="no" active="no"/>
-<layer number="218" name="218bmp" blackcolor="0xc8a7bacf" whitecolor="0xc8a7bacf" coloredcolor="0xcc5fad56" blackhighlight="0xc8f26a52" whitehighlight="0xc8f26a52" coloredhighlight="0xcc516363" fill="1" visible="no" active="no"/>
-<layer number="219" name="219bmp" blackcolor="0xc8bb7a14" whitecolor="0xc8bb7a14" coloredcolor="0xcc00bfb2" blackhighlight="0xc89bd5ef" whitehighlight="0xc89bd5ef" coloredhighlight="0xccd6a2ad" fill="1" visible="no" active="no"/>
-<layer number="220" name="220bmp" blackcolor="0xc8658d30" whitecolor="0xc8658d30" coloredcolor="0xcc65def1" blackhighlight="0xc8ffbeab" whitehighlight="0xc8ffbeab" coloredhighlight="0xccef476f" fill="1" visible="no" active="no"/>
-<layer number="221" name="221bmp" blackcolor="0xc823a597" whitecolor="0xc823a597" coloredcolor="0xccc55ea3" blackhighlight="0xc8e8430f" whitehighlight="0xc8e8430f" coloredhighlight="0xccd4dcff" fill="1" visible="no" active="no"/>
-<layer number="222" name="222bmp" blackcolor="0xc8a76ef5" whitecolor="0xc8a76ef5" coloredcolor="0xccf56416" blackhighlight="0xccafd134" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="223" name="223bmp" blackcolor="0xb462d986" whitecolor="0xb462d986" coloredcolor="0xcceec643" blackhighlight="0xb462d986" whitehighlight="0xb462d986" coloredhighlight="0xcceec643" fill="1" visible="no" active="no"/>
-<layer number="224" name="224bmp" blackcolor="0xc8c5a1f8" whitecolor="0xc8c5a1f8" coloredcolor="0xcc5e897c" blackhighlight="0xc8c5a1f8" whitehighlight="0xc8c5a1f8" coloredhighlight="0xcc5e897c" fill="1" visible="no" active="no"/>
-<layer number="225" name="225bmp" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="yes"/>
-<layer number="226" name="226bmp" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="yes"/>
-<layer number="227" name="227bmp" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="yes"/>
-<layer number="228" name="228bmp" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="yes"/>
-<layer number="229" name="229bmp" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes"/>
-<layer number="230" name="230bmp" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="yes"/>
-<layer number="231" name="Eagle3D_PG1" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes"/>
-<layer number="232" name="Eagle3D_PG2" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes"/>
-<layer number="233" name="Eagle3D_PG3" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes"/>
-<layer number="248" name="Housing" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="249" name="Edge" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="no" active="no"/>
-<layer number="250" name="Descript" blackcolor="0xcc32c8c8" whitecolor="0xb432c8c8" coloredcolor="0xb432c8c8" blackhighlight="0xb400ffff" whitehighlight="0xb400ffff" coloredhighlight="0xb400ffff" fill="1" visible="no" active="no"/>
-<layer number="251" name="SMDround" blackcolor="0xccff0000" whitecolor="0xb4ff0000" coloredcolor="0xb4ff0000" blackhighlight="0xccff0000" whitehighlight="0xb4ff0000" coloredhighlight="0xb4ff0000" fill="11" visible="no" active="no"/>
-<layer number="254" name="OrgLBR" blackcolor="0xccff00ff" whitecolor="0xb4ff00ff" coloredcolor="0xb4ff00ff" blackhighlight="0xccff00ff" whitehighlight="0xb4ff00ff" coloredhighlight="0xb4ff00ff" fill="1" visible="no" active="no"/>
-<layer number="255" name="Accent" blackcolor="0xccc8c8c8" whitecolor="0xbb808080" coloredcolor="0xbb808080" blackhighlight="0xc8ffffff" whitehighlight="0xccafd134" coloredhighlight="0xccafd134" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="16" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="17" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="18" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="19" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="25" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="26" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="27" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="28" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="29" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="30" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="20" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="21" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="22" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="23" fill="6" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="no"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="no"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="no"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="99" name="SpiceOrder" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
+<layer number="101" name="Patch_Top" color="7" fill="4" visible="no" active="no"/>
+<layer number="102" name="Vscore" color="7" fill="1" visible="no" active="no"/>
+<layer number="103" name="tMap" color="7" fill="1" visible="no" active="no"/>
+<layer number="104" name="Name" color="7" fill="1" visible="no" active="no"/>
+<layer number="105" name="tPlate" color="7" fill="1" visible="no" active="no"/>
+<layer number="106" name="bPlate" color="7" fill="1" visible="no" active="no"/>
+<layer number="107" name="Crop" color="7" fill="1" visible="no" active="no"/>
+<layer number="108" name="fp8" color="7" fill="1" visible="no" active="no"/>
+<layer number="109" name="fp9" color="7" fill="1" visible="no" active="no"/>
+<layer number="110" name="110" color="7" fill="1" visible="no" active="no"/>
+<layer number="111" name="111" color="7" fill="1" visible="no" active="no"/>
+<layer number="112" name="tSilk" color="7" fill="1" visible="no" active="no"/>
+<layer number="113" name="IDFDebug" color="7" fill="1" visible="no" active="yes"/>
+<layer number="114" name="FRNTMAAT1" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="115" name="FRNTMAAT2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="116" name="Patch_BOT" color="7" fill="4" visible="no" active="no"/>
+<layer number="117" name="BACKMAAT1" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
+<layer number="119" name="KAP_TEKEN" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="120" name="KAP_MAAT1" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="no"/>
+<layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="no"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="no"/>
+<layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="no"/>
+<layer number="125" name="_tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="126" name="_bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="129" name="top_silk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="130" name="SMDSTROOK" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="no"/>
+<layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="no"/>
+<layer number="133" name="bottom_silk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="134" name="silk_top" color="7" fill="1" visible="no" active="no"/>
+<layer number="135" name="silk_bottom" color="7" fill="1" visible="no" active="no"/>
+<layer number="136" name="silktop" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="137" name="silkbottom" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="138" name="mbTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="139" name="mtKeepout" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="140" name="mbKeepout" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="141" name="mtRestrict" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="142" name="mbRestrict" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="143" name="mvRestrict" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="144" name="DrillLegend" color="7" fill="1" visible="no" active="no"/>
+<layer number="145" name="DrillLegend_01-16" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="146" name="DrillLegend_01-20" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="147" name="mMeasures" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="148" name="mDocument" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="149" name="mReference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="no"/>
+<layer number="152" name="_bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="153" name="FabDoc1" color="7" fill="1" visible="no" active="no"/>
+<layer number="154" name="FabDoc2" color="7" fill="1" visible="no" active="no"/>
+<layer number="155" name="FabDoc3" color="7" fill="15" visible="no" active="no"/>
+<layer number="166" name="AntennaArea" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="168" name="4mmHeightArea" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="191" name="mNets" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="192" name="mBusses" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="193" name="mPins" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="194" name="mSymbols" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="195" name="mNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="196" name="mValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="no" active="no"/>
+<layer number="200" name="200bmp" color="7" fill="10" visible="no" active="no"/>
+<layer number="201" name="201bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="202" name="202bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="203" name="203bmp" color="7" fill="10" visible="no" active="no"/>
+<layer number="204" name="204bmp" color="7" fill="10" visible="no" active="no"/>
+<layer number="205" name="205bmp" color="7" fill="10" visible="no" active="no"/>
+<layer number="206" name="206bmp" color="7" fill="10" visible="no" active="no"/>
+<layer number="207" name="207bmp" color="7" fill="10" visible="no" active="no"/>
+<layer number="208" name="208bmp" color="7" fill="10" visible="no" active="no"/>
+<layer number="209" name="209bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="210" name="210bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="211" name="211bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="212" name="212bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="213" name="213bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="214" name="214bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="215" name="215bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="216" name="216bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="217" name="217bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="218" name="218bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="219" name="219bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="220" name="220bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="221" name="221bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="222" name="222bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="223" name="223bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="224" name="224bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="225" name="225bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="226" name="226bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="227" name="227bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="228" name="228bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="229" name="229bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="230" name="230bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="231" name="Eagle3D_PG1" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="248" name="Housing" color="7" fill="1" visible="no" active="no"/>
+<layer number="249" name="Edge" color="7" fill="1" visible="no" active="no"/>
+<layer number="250" name="Descript" color="7" fill="1" visible="no" active="no"/>
+<layer number="251" name="SMDround" color="7" fill="11" visible="no" active="no"/>
+<layer number="254" name="OrgLBR" color="7" fill="1" visible="no" active="no"/>
+<layer number="255" name="Accent" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
@@ -432,7 +432,6 @@
 <packageinstances>
 <packageinstance name="RESC1005X40"/>
 </packageinstances>
-<metadata/>
 </package3d>
 <package3d name="RESC1608X60" urn="urn:adsk.eagle:package:16378565/2" type="model">
 <description>Chip, 1.60 X 0.82 X 0.60 mm body
@@ -440,7 +439,6 @@
 <packageinstances>
 <packageinstance name="RESC1608X60"/>
 </packageinstances>
-<metadata/>
 </package3d>
 <package3d name="RESC2012X65" urn="urn:adsk.eagle:package:16378559/2" type="model">
 <description>Chip, 2.00 X 1.25 X 0.65 mm body
@@ -448,7 +446,6 @@
 <packageinstances>
 <packageinstance name="RESC2012X65"/>
 </packageinstances>
-<metadata/>
 </package3d>
 <package3d name="RESC3216X70" urn="urn:adsk.eagle:package:16378566/2" type="model">
 <description>Chip, 3.20 X 1.60 X 0.70 mm body
@@ -456,7 +453,6 @@
 <packageinstances>
 <packageinstance name="RESC3216X70"/>
 </packageinstances>
-<metadata/>
 </package3d>
 <package3d name="RESC3224X71" urn="urn:adsk.eagle:package:16378563/3" type="model">
 <description>Chip, 3.20 X 2.49 X 0.71 mm body
@@ -464,7 +460,6 @@
 <packageinstances>
 <packageinstance name="RESC3224X71"/>
 </packageinstances>
-<metadata/>
 </package3d>
 <package3d name="RESC5025X71" urn="urn:adsk.eagle:package:16378564/2" type="model">
 <description>Chip, 5.00 X 2.50 X 0.71 mm body
@@ -472,7 +467,6 @@
 <packageinstances>
 <packageinstance name="RESC5025X71"/>
 </packageinstances>
-<metadata/>
 </package3d>
 <package3d name="RESC6332X71L" urn="urn:adsk.eagle:package:16378557/3" type="model">
 <description>Chip, 6.30 X 3.20 X 0.71 mm body
@@ -480,7 +474,6 @@
 <packageinstances>
 <packageinstance name="RESC6332X71"/>
 </packageinstances>
-<metadata/>
 </package3d>
 <package3d name="RESAD1176W63L850D250B" urn="urn:adsk.eagle:package:16378560/2" type="model">
 <description>AXIAL Resistor, 11.76 mm pitch, 8.5 mm body length, 2.5 mm body diameter
@@ -488,7 +481,6 @@
 <packageinstances>
 <packageinstance name="RESAD1176W63L850D250B"/>
 </packageinstances>
-<metadata/>
 </package3d>
 <package3d name="RESMELF3515" urn="urn:adsk.eagle:package:16378562/2" type="model">
 <description>MELF, 3.50 mm length, 1.52 mm diameter
@@ -496,7 +488,6 @@
 <packageinstances>
 <packageinstance name="RESMELF3515"/>
 </packageinstances>
-<metadata/>
 </package3d>
 <package3d name="RESMELF2014" urn="urn:adsk.eagle:package:16378558/2" type="model">
 <description>MELF, 2.00 mm length, 1.40 mm diameter
@@ -504,7 +495,6 @@
 <packageinstances>
 <packageinstance name="RESMELF2014"/>
 </packageinstances>
-<metadata/>
 </package3d>
 <package3d name="RESMELF5924" urn="urn:adsk.eagle:package:16378567/3" type="model">
 <description>MELF, 5.90 mm length, 2.45 mm diameter
@@ -512,7 +502,6 @@
 <packageinstances>
 <packageinstance name="RESMELF5924"/>
 </packageinstances>
-<metadata/>
 </package3d>
 <package3d name="RESMELF3218" urn="urn:adsk.eagle:package:16378556/2" type="model">
 <description>MELF, 3.20 mm length, 1.80 mm diameter
@@ -520,7 +509,6 @@
 <packageinstances>
 <packageinstance name="RESMELF3218"/>
 </packageinstances>
-<metadata/>
 </package3d>
 <package3d name="RESAD724W46L381D178B" urn="urn:adsk.eagle:package:16378561/2" type="model">
 <description>Axial Resistor, 7.24 mm pitch, 3.81 mm body length, 1.78 mm body diameter
@@ -528,7 +516,6 @@
 <packageinstances>
 <packageinstance name="RESAD724W46L381D178B"/>
 </packageinstances>
-<metadata/>
 </package3d>
 </packages3d>
 <symbols>
@@ -1065,7 +1052,6 @@
 <packageinstances>
 <packageinstance name="SW2-2.6-3.0X2.5X1.2+0.4MM"/>
 </packageinstances>
-<metadata/>
 </package3d>
 </packages3d>
 <symbols>
@@ -1145,7 +1131,6 @@
 <packageinstances>
 <packageinstance name="LED-0805"/>
 </packageinstances>
-<metadata/>
 </package3d>
 </packages3d>
 <symbols>
@@ -1343,7 +1328,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <packageinstances>
 <packageinstance name="C0805"/>
 </packageinstances>
-<metadata/>
 </package3d>
 </packages3d>
 <symbols>
@@ -1682,266 +1666,228 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <packageinstances>
 <packageinstance name="B1,27"/>
 </packageinstances>
-<metadata/>
 </package3d>
 <package3d name="B2,54" urn="urn:adsk.eagle:package:27948/1" type="box" library_version="3">
 <description>TEST PAD</description>
 <packageinstances>
 <packageinstance name="B2,54"/>
 </packageinstances>
-<metadata/>
 </package3d>
 <package3d name="P1-13" urn="urn:adsk.eagle:package:27946/1" type="box" library_version="3">
 <description>TEST PAD</description>
 <packageinstances>
 <packageinstance name="P1-13"/>
 </packageinstances>
-<metadata/>
 </package3d>
 <package3d name="P1-13Y" urn="urn:adsk.eagle:package:27947/1" type="box" library_version="3">
 <description>TEST PAD</description>
 <packageinstances>
 <packageinstance name="P1-13Y"/>
 </packageinstances>
-<metadata/>
 </package3d>
 <package3d name="P1-17" urn="urn:adsk.eagle:package:27949/1" type="box" library_version="3">
 <description>TEST PAD</description>
 <packageinstances>
 <packageinstance name="P1-17"/>
 </packageinstances>
-<metadata/>
 </package3d>
 <package3d name="P1-17Y" urn="urn:adsk.eagle:package:27953/1" type="box" library_version="3">
 <description>TEST PAD</description>
 <packageinstances>
 <packageinstance name="P1-17Y"/>
 </packageinstances>
-<metadata/>
 </package3d>
 <package3d name="P1-20" urn="urn:adsk.eagle:package:27950/1" type="box" library_version="3">
 <description>TEST PAD</description>
 <packageinstances>
 <packageinstance name="P1-20"/>
 </packageinstances>
-<metadata/>
 </package3d>
 <package3d name="P1-20Y" urn="urn:adsk.eagle:package:27951/1" type="box" library_version="3">
 <description>TEST PAD</description>
 <packageinstances>
 <packageinstance name="P1-20Y"/>
 </packageinstances>
-<metadata/>
 </package3d>
 <package3d name="TP06R" urn="urn:adsk.eagle:package:27954/1" type="box" library_version="3">
 <description>TEST PAD</description>
 <packageinstances>
 <packageinstance name="TP06R"/>
 </packageinstances>
-<metadata/>
 </package3d>
 <package3d name="TP06SQ" urn="urn:adsk.eagle:package:27952/1" type="box" library_version="3">
 <description>TEST PAD</description>
 <packageinstances>
 <packageinstance name="TP06SQ"/>
 </packageinstances>
-<metadata/>
 </package3d>
 <package3d name="TP07R" urn="urn:adsk.eagle:package:27970/1" type="box" library_version="3">
 <description>TEST PAD</description>
 <packageinstances>
 <packageinstance name="TP07R"/>
 </packageinstances>
-<metadata/>
 </package3d>
 <package3d name="TP07SQ" urn="urn:adsk.eagle:package:27955/1" type="box" library_version="3">
 <description>TEST PAD</description>
 <packageinstances>
 <packageinstance name="TP07SQ"/>
 </packageinstances>
-<metadata/>
 </package3d>
 <package3d name="TP08R" urn="urn:adsk.eagle:package:27956/1" type="box" library_version="3">
 <description>TEST PAD</description>
 <packageinstances>
 <packageinstance name="TP08R"/>
 </packageinstances>
-<metadata/>
 </package3d>
 <package3d name="TP08SQ" urn="urn:adsk.eagle:package:27960/1" type="box" library_version="3">
 <description>TEST PAD</description>
 <packageinstances>
 <packageinstance name="TP08SQ"/>
 </packageinstances>
-<metadata/>
 </package3d>
 <package3d name="TP09R" urn="urn:adsk.eagle:package:27958/1" type="box" library_version="3">
 <description>TEST PAD</description>
 <packageinstances>
 <packageinstance name="TP09R"/>
 </packageinstances>
-<metadata/>
 </package3d>
 <package3d name="TP09SQ" urn="urn:adsk.eagle:package:27957/1" type="box" library_version="3">
 <description>TEST PAD</description>
 <packageinstances>
 <packageinstance name="TP09SQ"/>
 </packageinstances>
-<metadata/>
 </package3d>
 <package3d name="TP10R" urn="urn:adsk.eagle:package:27959/1" type="box" library_version="3">
 <description>TEST PAD</description>
 <packageinstances>
 <packageinstance name="TP10R"/>
 </packageinstances>
-<metadata/>
 </package3d>
 <package3d name="TP10SQ" urn="urn:adsk.eagle:package:27962/1" type="box" library_version="3">
 <description>TEST PAD</description>
 <packageinstances>
 <packageinstance name="TP10SQ"/>
 </packageinstances>
-<metadata/>
 </package3d>
 <package3d name="TP11R" urn="urn:adsk.eagle:package:27961/1" type="box" library_version="3">
 <description>TEST PAD</description>
 <packageinstances>
 <packageinstance name="TP11R"/>
 </packageinstances>
-<metadata/>
 </package3d>
 <package3d name="TP11SQ" urn="urn:adsk.eagle:package:27965/1" type="box" library_version="3">
 <description>TEST PAD</description>
 <packageinstances>
 <packageinstance name="TP11SQ"/>
 </packageinstances>
-<metadata/>
 </package3d>
 <package3d name="TP12SQ" urn="urn:adsk.eagle:package:27964/1" type="box" library_version="3">
 <description>TEST PAD</description>
 <packageinstances>
 <packageinstance name="TP12SQ"/>
 </packageinstances>
-<metadata/>
 </package3d>
 <package3d name="TP12R" urn="urn:adsk.eagle:package:27963/1" type="box" library_version="3">
 <description>TEST PAD</description>
 <packageinstances>
 <packageinstance name="TP12R"/>
 </packageinstances>
-<metadata/>
 </package3d>
 <package3d name="TP13R" urn="urn:adsk.eagle:package:27967/1" type="box" library_version="3">
 <description>TEST PAD</description>
 <packageinstances>
 <packageinstance name="TP13R"/>
 </packageinstances>
-<metadata/>
 </package3d>
 <package3d name="TP14R" urn="urn:adsk.eagle:package:27966/1" type="box" library_version="3">
 <description>TEST PAD</description>
 <packageinstances>
 <packageinstance name="TP14R"/>
 </packageinstances>
-<metadata/>
 </package3d>
 <package3d name="TP15R" urn="urn:adsk.eagle:package:27968/1" type="box" library_version="3">
 <description>TEST PAD</description>
 <packageinstances>
 <packageinstance name="TP15R"/>
 </packageinstances>
-<metadata/>
 </package3d>
 <package3d name="TP16R" urn="urn:adsk.eagle:package:27969/1" type="box" library_version="3">
 <description>TEST PAD</description>
 <packageinstances>
 <packageinstance name="TP16R"/>
 </packageinstances>
-<metadata/>
 </package3d>
 <package3d name="TP17R" urn="urn:adsk.eagle:package:27971/1" type="box" library_version="3">
 <description>TEST PAD</description>
 <packageinstances>
 <packageinstance name="TP17R"/>
 </packageinstances>
-<metadata/>
 </package3d>
 <package3d name="TP18R" urn="urn:adsk.eagle:package:27981/1" type="box" library_version="3">
 <description>TEST PAD</description>
 <packageinstances>
 <packageinstance name="TP18R"/>
 </packageinstances>
-<metadata/>
 </package3d>
 <package3d name="TP19R" urn="urn:adsk.eagle:package:27972/1" type="box" library_version="3">
 <description>TEST PAD</description>
 <packageinstances>
 <packageinstance name="TP19R"/>
 </packageinstances>
-<metadata/>
 </package3d>
 <package3d name="TP20R" urn="urn:adsk.eagle:package:27973/1" type="box" library_version="3">
 <description>TEST PAD</description>
 <packageinstances>
 <packageinstance name="TP20R"/>
 </packageinstances>
-<metadata/>
 </package3d>
 <package3d name="TP13SQ" urn="urn:adsk.eagle:package:27974/1" type="box" library_version="3">
 <description>TEST PAD</description>
 <packageinstances>
 <packageinstance name="TP13SQ"/>
 </packageinstances>
-<metadata/>
 </package3d>
 <package3d name="TP14SQ" urn="urn:adsk.eagle:package:27984/1" type="box" library_version="3">
 <description>TEST PAD</description>
 <packageinstances>
 <packageinstance name="TP14SQ"/>
 </packageinstances>
-<metadata/>
 </package3d>
 <package3d name="TP15SQ" urn="urn:adsk.eagle:package:27975/1" type="box" library_version="3">
 <description>TEST PAD</description>
 <packageinstances>
 <packageinstance name="TP15SQ"/>
 </packageinstances>
-<metadata/>
 </package3d>
 <package3d name="TP16SQ" urn="urn:adsk.eagle:package:27976/1" type="box" library_version="3">
 <description>TEST PAD</description>
 <packageinstances>
 <packageinstance name="TP16SQ"/>
 </packageinstances>
-<metadata/>
 </package3d>
 <package3d name="TP17SQ" urn="urn:adsk.eagle:package:27977/1" type="box" library_version="3">
 <description>TEST PAD</description>
 <packageinstances>
 <packageinstance name="TP17SQ"/>
 </packageinstances>
-<metadata/>
 </package3d>
 <package3d name="TP18SQ" urn="urn:adsk.eagle:package:27979/1" type="box" library_version="3">
 <description>TEST PAD</description>
 <packageinstances>
 <packageinstance name="TP18SQ"/>
 </packageinstances>
-<metadata/>
 </package3d>
 <package3d name="TP19SQ" urn="urn:adsk.eagle:package:27978/1" type="box" library_version="3">
 <description>TEST PAD</description>
 <packageinstances>
 <packageinstance name="TP19SQ"/>
 </packageinstances>
-<metadata/>
 </package3d>
 <package3d name="TP20SQ" urn="urn:adsk.eagle:package:27980/1" type="box" library_version="3">
 <description>TEST PAD</description>
 <packageinstances>
 <packageinstance name="TP20SQ"/>
 </packageinstances>
-<metadata/>
 </package3d>
 </packages3d>
 <symbols>
