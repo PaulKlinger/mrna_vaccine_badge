@@ -46,25 +46,6 @@ void go_to_sleep(){
 }
 
 
-void show_base(Base b) {
-    // for v1 (same color leds connected)
-    switch (b) {
-        case A: // green
-            // cast to prevent warning caused by integer promotion to signed...
-            VPORTB.OUT = (uint8_t) ~PIN7_bm;
-            break;
-        case C: // blue
-            VPORTB.OUT = (uint8_t) ~PIN6_bm;
-            break;
-        case G: // yellow
-            VPORTA.OUT = (uint8_t) ~PIN6_bm;
-            break;
-        case T: // red
-            VPORTA.OUT = (uint8_t) ~PIN7_bm;
-            break;
-    }
-};
-
 void show_bases(Base b1, Base b2) {
     VPORTA.OUT = 255;
     VPORTB.OUT = 255;
@@ -108,10 +89,33 @@ const struct sequence *select_sequence(struct config cfg) {
     } else if (cfg.sequence == PFIZER) {
         return &pfizer_sequence;
     }
-    /* this should never happen */
-    VPORTA.OUT = 0;
-    VPORTB.OUT = 0;
+    /* this should never happen */ 
     while(1){}
+}
+
+
+void sequence_select_menu(struct config *cfg) {
+    while (1) {
+        if (button_released > LONG_PRESS_LENGTH) {
+            button_released = 0;
+            save_config(*cfg); // store config in EEPROM
+            break; // start displaying sequence
+        } else if (button_released) {
+            button_released = 0;
+            if (cfg->sequence == MODERNA) {
+                cfg->sequence = PFIZER;
+            } else if (cfg->sequence == PFIZER) {
+                cfg->sequence = MODERNA;
+            }
+        }
+        if (cfg->sequence == MODERNA) {
+            VPORTB.OUT = 255;
+            VPORTA.OUT = (uint8_t) ~(PIN4_bm | PIN5_bm | PIN6_bm | PIN7_bm);
+        } else if (cfg->sequence == PFIZER) {
+            VPORTA.OUT = 255;
+            VPORTB.OUT = (uint8_t) ~(PIN4_bm | PIN5_bm | PIN6_bm | PIN7_bm);
+        }
+    }
 }
 
 
@@ -185,27 +189,7 @@ int main(void) {
         if (button_released > LONG_PRESS_LENGTH) {
             button_released = 0;
             // long press, switch between sequences
-            while (1) {
-                if (button_released > LONG_PRESS_LENGTH) {
-                    button_released = 0;
-                    save_config(cfg); // store config in EEPROM
-                    break; // start displaying sequence
-                } else if (button_released) {
-                    button_released = 0;
-                    if (cfg.sequence == MODERNA) {
-                        cfg.sequence = PFIZER;
-                    } else if (cfg.sequence == PFIZER) {
-                        cfg.sequence = MODERNA;
-                    }
-                }
-                if (cfg.sequence == MODERNA) {
-                    VPORTB.OUT = 255;
-                    VPORTA.OUT = (uint8_t) ~(PIN4_bm | PIN5_bm | PIN6_bm | PIN7_bm);
-                } else if (cfg.sequence == PFIZER) {
-                    VPORTA.OUT = 255;
-                    VPORTB.OUT = (uint8_t) ~(PIN4_bm | PIN5_bm | PIN6_bm | PIN7_bm);
-                }
-            }
+            sequence_select_menu(&cfg);
         } else {
             button_released = 0;
             go_to_sleep();
